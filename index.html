@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey Club</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- tailwind link -->
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+<!-- fontawesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  
+
+</head>
+<body>
+    <header>
+<nav class="ml-32 mr-32 mb-6">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl">Hockey <span class="text-red-500 font-bold text-2xl">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl ">
+              
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="navbar-end">
+            <i class="fa fa-search mr-2" aria-hidden="true"></i>
+          <a class="btn bg-red-500 text-white">Get Ticket</a>
+        </div>
+      </div>
+</nav>
+
+    </header>
+    <main>
+
+        <section class="banner text-2xl ml-32 mr-32">
+            <div class="carousel w-full h-96">
+                <div id="slide1" class="carousel-item relative w-full ">
+                  <img src="/images/1.png" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 object-cover">
+                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a> 
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a> 
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="txt bg-black text-gray-400 p-5 rounded-lg sm:w-full lg:absolute  top-80 right-3 lg:w-96 ">
+                <h1 class="font-bold">Meet all the heros from the field</h1>
+                <p class="text-xl">The dress code is “casual” and laid-back because it values skill and hard work, not appearance. Google has a very engaging culture of the business. </p>
+              </div>
+        </section>
+
+        <section class="percentage text-2xl m-32 ">
+            <div class="text border-dashed border-y-2 mb-8 ">
+                <h1 class="font-extrabold text-center text-4xl pb-4">Professional Hockeys Club</h1>
+                <p class="text-center pb-5 mb-5">
+                    Google is the leading Internet search engine; its main service provides customers with targeted search outcomes chosen from over 8 billion web pages.
+                </p>
+            </div>
+<div class="rate  flex flex-col ml-44 mr-44 mt-4 gap-6 justify-between lg:flex-row">
+
+    <div class="text-center mb-5">
+        <div class="radial-progress text-red-500 font-bold" style="--value:87;--size:8rem;" role="progressbar">
+            <span class="text-black font-bold">87%</span></div>
+            <h1 class="font-bold">Player Facility</h1>
+            <p >Lorem ipsum dolor sit amet.</p>
+    </div>
+   
+    <div class="text-center mb-5">
+        <div class="radial-progress text-green-700" style="--value:95;--size:8rem;" role="progressbar"><span class="text-black font-bold">95%</span></div>
+        <h1 class="font-bold" >Experienced Coach</h1>
+        <p >Lorem ipsum dolor sit amet.</p>
+    </div>
+   <div class="text-center mb-5">
+    <div class="radial-progress text-yellow-500" style="--value:90;--size:8rem;" role="progressbar"><span class="text-black font-bold">90%</span></div>
+    <h1 class="font-bold">Senior Player</h1>
+    <p >Lorem ipsum dolor sit amet.</p>
+   </div>
+   <div class="text-center mb-5">
+    <div class="radial-progress text-blue-500" style="--value:80;--size:8rem;" role="progressbar"><span class="text-black font-bold">80%</span></div>
+    <h1 class="font-bold" >Training Ground</h1>
+    <p >Lorem ipsum dolor sit amet.</p>
+   </div>
+
+</div>
+
+        </section>
+
+        <section class="program text-2xl m-32">
+            <div class="program-text border-dashed border-y-2 mb-8">
+<h1 class="font-extrabold text-center text-4xl pb-4">Program Sections</h1>
+<p class="text-center pb-5 mb-5">
+    Google is the leading Internet search engine; its main service provides customers with targeted search outcomes chosen from over 8 billion web pages. 
+</p>
+</div>
+
+<div class="program-image  ">
+
+    <div class="first lg:flex gap-6">
+        <div class="hero rounded-lg mt-5" style="background-image: url(/images/2.png); ">
+            <div class="hero-overlay bg-opacity-50 rounded-lg"></div>
+            <div class="hero-content  text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-bold">Junior Program</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="bg-red-600 text-yellow-100 p-2 rounded-md">Register Now</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="hero mt-5 rounded-lg" style="background-image: url(/images/3.png);">
+            <div class="hero-overlay bg-opacity-50 rounded-lg"></div>
+            <div class="hero-content  text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-bold">Teenager Program</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="bg-red-600 text-yellow-100 p-2 rounded-md">Register Now</button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+    </div>
+    <div class="second">
+        <div class="hero rounded-lg mt-5" style="background-image: url(/images/4.png);">
+            <div class="hero-overlay bg-opacity-50 rounded-lg"></div>
+            <div class="hero-content  text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-4xl font-bold">Professional Program</h1>
+                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button class="bg-red-600 text-yellow-100 p-2 rounded-md">Register Now</button>
+              </div>
+            </div>
+          </div>
+           
+    </div>
+</div>
+
+
+        </section>
+        <section class="product text-2xl m-32">
+<div class="product-text border-dashed border-y-2 mb-8 ">
+    <h1  class="font-extrabold text-center text-4xl pb-4">Our New Products</h1>
+    <p class="text-center pb-5 mb-5">
+        Google is the leading Internet search engine; its main service provides customers with targeted search outcomes chosen from over 8 billion web pages. 
+    </p>
+</div>
+<div class="product-card gap-6 lg:grid grid-cols-2 ">
+
+    <div class="hero  bg-base-200 border-2 rounded-lg mb-4">
+  <div class="hero-content flex-col lg:flex-row">
+    <img src="/images/5.png" class="rounded-lg shadow-2xl w-96 object-cover" />
+    <div>
+        <div class="icon  flex gap-6">
+            <a href=""><i class="fa fa-star-o text-amber-500" aria-hidden="true"></i>5.0</a>
+        <a href=""><i class="fa fa-eye text-gray-600" aria-hidden="true"></i>20</a>
+        <a href=""><i class="fa fa-heart-o text-red-800" aria-hidden="true"></i>200</a>
+        </div>
+      <h1 class="text-3xl font-bold pt-2">World Cup Flags Football</h1>
+      <p class="py-6">Provident cupiditate voluptatem et in.</p>
+      <h3 class="text-red-500 font-bold pb-2">Price-$22.00</h3>
+      <a href="" class="text-gray-500"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Delivery Fee:Free</a>
+    </div>
+  </div>
+</div>
+<div class="hero  bg-base-200 border-2 rounded-lg mb-4">
+    <div class="hero-content flex-col lg:flex-row ">
+      <img src="/images/6.png" class="rounded-lg shadow-2xl w-96 object-cover" />
+      <div>
+          <div class="icon  flex gap-6">
+              <a href=""><i class="fa fa-star-o text-amber-500" aria-hidden="true"></i>5.0</a>
+          <a href=""><i class="fa fa-eye text-gray-600" aria-hidden="true"></i>20</a>
+          <a href=""><i class="fa fa-heart-o text-red-800" aria-hidden="true"></i>200</a>
+          </div>
+        <h1 class="text-3xl font-bold pt-2">World Cup Flags Football</h1>
+        <p class="py-6">Provident cupiditate voluptatem et in.</p>
+        <h3 class="text-red-500 font-bold pb-2">Price-$22.00</h3>
+        <a href="" class="text-gray-500"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Delivery Fee:Free</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero  bg-base-200 border-2 rounded-lg mb-4">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="/images/7.png" class="rounded-lg shadow-2xl w-96 object-cover" />
+      <div>
+          <div class="icon  flex gap-6">
+              <a href=""><i class="fa fa-star-o text-amber-500" aria-hidden="true"></i>5.0</a>
+          <a href=""><i class="fa fa-eye text-gray-600" aria-hidden="true"></i>20</a>
+          <a href=""><i class="fa fa-heart-o text-red-800" aria-hidden="true"></i>200</a>
+          </div>
+        <h1 class="text-3xl font-bold pt-2">World Cup Flags Football</h1>
+        <p class="py-6">Provident cupiditate voluptatem et in.</p>
+        <h3 class="text-red-500 font-bold pb-2">Price-$22.00</h3>
+        <a href="" class="text-gray-500"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Delivery Fee:Free</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero  bg-base-200 border-2 rounded-lg mb-4">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="/images/8.png" class="rounded-lg shadow-2xl w-96 object-cover" />
+      <div>
+          <div class="icon  flex gap-6">
+              <a href=""><i class="fa fa-star-o text-amber-500" aria-hidden="true"></i>5.0</a>
+          <a href=""><i class="fa fa-eye text-gray-600" aria-hidden="true"></i>20</a>
+          <a href=""><i class="fa fa-heart-o text-red-800" aria-hidden="true"></i>200</a>
+          </div>
+        <h1 class="text-3xl font-bold pt-2">World Cup Flags Football</h1>
+        <p class="py-6">Provident cupiditate voluptatem et in.</p>
+        <h3 class="text-red-500 font-bold pb-2">Price-$22.00</h3>
+        <a href="" class="text-gray-500"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Delivery Fee:Free</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero  bg-base-200 border-2 rounded-lg mb-4">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="/images/9.png" class="rounded-lg shadow-2xl w-96 object-cover" />
+      <div>
+          <div class="icon  flex gap-6">
+              <a href=""><i class="fa fa-star-o text-amber-500" aria-hidden="true"></i>5.0</a>
+          <a href=""><i class="fa fa-eye text-gray-600" aria-hidden="true"></i>20</a>
+          <a href=""><i class="fa fa-heart-o text-red-800" aria-hidden="true"></i>200</a>
+          </div>
+        <h1 class="text-3xl font-bold pt-2">World Cup Flags Football</h1>
+        <p class="py-6">Provident cupiditate voluptatem et in.</p>
+        <h3 class="text-red-500 font-bold pb-2">Price-$22.00</h3>
+        <a href="" class="text-gray-500"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Delivery Fee:Free</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="hero  bg-base-200 border-2 rounded-lg mb-4">
+    <div class="hero-content flex-col lg:flex-row">
+      <img src="/images/10.png" class="rounded-lg shadow-2xl w-96 object-cover" />
+      <div>
+          <div class="icon  flex gap-6">
+              <a href=""><i class="fa fa-star-o text-amber-500" aria-hidden="true"></i>5.0</a>
+          <a href=""><i class="fa fa-eye text-gray-600" aria-hidden="true"></i>20</a>
+          <a href=""><i class="fa fa-heart-o text-red-800" aria-hidden="true"></i>200</a>
+          </div>
+        <h1 class="text-3xl font-bold pt-2">World Cup Flags Football</h1>
+        <p class="py-6">Provident cupiditate voluptatem et in.</p>
+        <h3 class="text-red-500 font-bold pb-2">Price-$22.00</h3>
+        <a href="" class="text-gray-500"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Delivery Fee:Free</a>
+      </div>
+    </div>
+  </div>
+  
+
+
+</div>
+        </section>
+        <section class="faq contact text-2xl ">
+            <div class="text m-32 border-dashed border-y-2 mb-8 ">
+                <h1 class="font-extrabold text-center text-4xl pb-4">Clients Qestions</h1>
+                <p class="text-center pb-5 mb-5">Google is the leading Internet search engine; its main service provides customers with targeted search outcomes chosen from over 8 billion web pages.  </p>
+            </div>
+
+<div class="faq-part  m-32 lg:flex gap-40 ml-44">
+
+    <div class="faq-image -mt-16 mb-20 ">
+        <img src="/images/11.png" alt="">
+    </div>
+
+<div class="faq-qus  -mt-16  lg:flex flex-col ">
+    <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" checked="checked" /> 
+        <div class="collapse-title text-xl font-medium">
+          Our Equipment
+        </div>
+        <div class="collapse-content"> 
+          <p> Click to open this one and close others</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+          Hockey Training
+        </div>
+        <div class="collapse-content"> 
+          <p> Click to open this one and close others</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+          Private Lessons
+        </div>
+        <div class="collapse-content"> 
+          <p> Click to open this one and close others</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+          Ski Touring 
+        </div>
+        <div class="collapse-content"> 
+          <p> Click to open this one and close others</p>
+        </div>
+      </div>
+    <div class="collapse collapse-plus bg-base-200 ">
+        <input type="radio" name="my-accordion-3" checked="checked" /> 
+        <div class="collapse-title text-xl font-medium">
+          Booking
+        </div>
+        <div class="collapse-content"> 
+          <p> Click to open this one and close others</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+          Pricings
+        </div>
+        <div class="collapse-content"> 
+          <p> Click to open this one and close others</p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-base-200">
+        <input type="radio" name="my-accordion-3" /> 
+        <div class="collapse-title text-xl font-medium">
+         Champions
+        </div>
+        <div class="collapse-content"> 
+          <p> Click to open this one and close others</p>
+        </div>
+      </div>
+</div>
+    
+    
+      
+   
+</div>
+            
+        </section>
+        <section class="contact text-2xl m-32">
+            <div class="text border-dashed border-y-2 mb-8">
+                <h1 class="font-extrabold text-center text-4xl pb-4">Get In Touch</h1>
+                <p class="text-center pb-5 mb-5"> Google is the leading Internet search engine; its main service provides customers with targeted search outcomes chosen from over 8 billion web pages. Both Stanford dropouts, Larry Page and Sergey Brin, </p>
+            </div>
+           
+            
+            <div class="input-contact flex   justify-between sm:flex-col gap-10 lg:flex-row ">
+
+                <div class="icon-field  p-8 mt-4 lg:w-[60%] border-2">
+<div class="1 bg-[#bced6e19] p-4 mb-4 h-44">
+    <!-- <i class="fa fa-phone font-extrabold " ></i> -->
+    <img src="/images/Group 1171275317.png" alt="">
+    <h3 class="font-bold">Phone Number:</h3>
+    <h2 class="font-extrabold">(+62)123-224-346</h2>
+</div>
+<div class="2 bg-[#fddd5f19] p-4 mb-4 h-44">
+    <!-- <i class="fa fa-envelope font-extrabold " aria-hidden="true"></i> -->
+    <img src="/images/Group 1171275318.png" alt="">
+    <h3 class="font-bold">Email:</h3>
+    <h2 class="font-extrabold">hockeys@support.com</h2>
+</div>
+<div class="3 bg-[#629cf319] p-4 h-44">
+    <!-- <i class="fa fa-map-marker font-extrabold " aria-hidden="true"></i> -->
+    <img src="/images/Group 1171275321.png" alt="">
+    <h3 class="font-bold">Location:</h3>
+    <h2 class="font-extrabold">152/1 Mohakhali Wireless Gate</h2>
+</div>
+                </div>
+                <div class="input-field lg:w-[40%] p-8 ">
+                    <div class="11 ">
+                        <h3 class="mb-2">Your Name</h3>
+                        <input class="border-2 bg-gray-200 h-10 p-3 rounded-md" type="text" placeholder="Enter Your Name">
+                    </div>
+                    <div class="12 mt-4">
+                        <h3 class="mb-2">Your Email</h3>
+                        <input class="border-2 bg-gray-200 h-10 p-3 rounded-md" type="email" placeholder="Enter Your mail">
+                    </div>
+                    <div class="13 mt-4">
+                        <h3 class="mb-2">Subject</h3>
+                        <input  class="border-2 bg-gray-200 h-10 p-3 rounded-md"type="text" placeholder="Enter Your Subject">
+                    </div>
+                    <div class="14 mt-4">
+                        <h3 class="mb-2">Phone Number</h3>
+                    <input class="border-2 bg-gray-200 h-10 p-3 rounded-md" type="number" placeholder="Enter Your phone number">
+                   
+                    </div>
+                    <div class="15 mt-4">
+                        <h3 class="mb-2">Message</h3>
+                    <textarea class="border-2 bg-gray-200 h-100 p-3 rounded-md" name="message" id="" cols="24" rows="5" placeholder="write your message"></textarea>
+                    </div>
+                   <div class="button bg-red-600 text-yellow-100 rounded-md w-80 p-4 mt-4">
+                    <button>Send Message</button>
+                   </div>
+                   <div class="icon mt-4 w-80 text-center bg-gray-200 rounded-md h-24 p-3 ">
+                    <h3 class="font-bold">Social Media</h3>
+                   
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                
+                    
+                   </div>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+   
+        <footer class="footer p-10 bg-black text-white mt-20 ">
+            <aside>
+                <header class="footer-title">Get In Touch</header> 
+              <p>Google is named after the mathematical<br> word “googol,” described as the value represented<br> by one followed by 100 zeros.</p>
+<a href=""><i class="fa fa-phone text-red-600"></i>&nbsp;+888273205902 </a>
+<a href=""><i class="fa fa-envelope-o text-red-600" ></i>&nbsp;hockey@gmail.com</a>
+            </aside> 
+
+            
+            <nav class="sm:grid grid-cols-2 gap-60">
+                <div class="sm:grid">
+                    <header class="footer-title">Company</header> 
+                    <a class="link link-hover">Branding</a>
+                    <a class="link link-hover">Design</a>
+                    <a class="link link-hover">Marketing</a>
+                    <a class="link link-hover">Advertisement</a>
+                </div>
+             
+            <!-- </nav> 
+            <nav> -->
+            <div class="sm:grid">
+                <header class="footer-title">Support</header> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+            </div>
+            </nav> 
+            <nav >
+              <header class="footer-title">Services</header> 
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+          </footer>
+ 
+</body>
+</html>
